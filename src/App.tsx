@@ -1,12 +1,6 @@
-import * as React from "react"
-import {
-  ChakraProvider,
-  Box,
-  VStack,
-  Grid,
-  theme,
-} from "@chakra-ui/react"
-import { ColorModeSwitcher } from "./ColorModeSwitcher"
+import * as React from "react";
+import { ChakraProvider, Box, VStack, Grid, theme } from "@chakra-ui/react";
+import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import "./App.css";
 
 import { Heading } from "@chakra-ui/layout";
@@ -19,7 +13,9 @@ export const App = () => (
   <ChakraProvider theme={theme}>
     <JotaiProvider>
       <MediaProvider>
-        <Heading className="title" textAlign="center" paddingTop="5%">Carinhotron2000</Heading>
+        <Heading className="title" textAlign="center" paddingTop="5%">
+          Carinhotron2000
+        </Heading>
         <Box textAlign="center" fontSize="xl">
           <Grid minH="100vh" p={3}>
             <ColorModeSwitcher justifySelf="flex-end" />
@@ -32,4 +28,4 @@ export const App = () => (
       </MediaProvider>
     </JotaiProvider>
   </ChakraProvider>
-)
+);
