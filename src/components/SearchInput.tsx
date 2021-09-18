@@ -3,7 +3,6 @@ import { Input } from "@chakra-ui/input";
 import {
   addMediaAtom,
   Media,
-  mediasAtom,
   newMediaAtom,
   searchAtom,
 } from "../stores/MediaStore";
@@ -17,7 +16,6 @@ export const SearchInput = () => {
 
   const fetchTag = async () => {
     await fetchGif(text).then((gif: Media) => {
-      console.log("add via submit");
       newMediaSet(gif);
       addMedia();
     });

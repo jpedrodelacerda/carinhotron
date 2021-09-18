@@ -4,7 +4,6 @@ import * as React from "react";
 import { useAtom } from "jotai";
 import {
   Media,
-  useMediaContext,
   mediasAtom,
   zeroMedia,
 } from "../stores/MediaStore";

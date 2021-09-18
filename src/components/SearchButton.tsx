@@ -15,10 +15,9 @@ export const SearchButton = () => {
   const [, addMedia] = useAtom(addMediaAtom);
   const [searchTag] = useAtom(searchAtom);
 
-  const getDoggo = async () => {
+  const getGif= async () => {
     await fetchGif(searchTag).then((gif: Media): void => {
       newMediaSet(gif);
-      console.log();
       addMedia();
     });
   };
@@ -29,7 +28,7 @@ export const SearchButton = () => {
       variant="ghost"
       color="current"
       marginLeft="2"
-      onClick={getDoggo}
+      onClick={getGif}
       icon={<FaHeart />}
       aria-label="Get Doggo"
     />
