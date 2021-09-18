@@ -1,6 +1,6 @@
 import * as React from "react";
 import { ChakraProvider, Box, VStack, Grid, theme } from "@chakra-ui/react";
-import { ColorModeSwitcher } from "./ColorModeSwitcher";
+import { ColorModeSwitcher } from "./components/ColorModeSwitcher";
 
 import { Heading } from "@chakra-ui/layout";
 import { SearchBar } from "./components/SearchBar";
