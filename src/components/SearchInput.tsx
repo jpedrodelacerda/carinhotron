@@ -15,10 +15,11 @@ export const SearchInput = () => {
   const [, addMedia] = useAtom(addMediaAtom);
 
   const fetchTag = async () => {
-    await fetchGif(text).then((gif: Media) => {
-      newMediaSet(gif);
-      addMedia();
-    });
+    await fetchGif(text)
+      .then((gif: Media) => {
+        newMediaSet(gif);
+        addMedia();
+      });
   };
 
   return (
